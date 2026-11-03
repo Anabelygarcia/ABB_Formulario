@@ -1,0 +1,23 @@
+TAREA 4.2 - ARBOL BINARIO DE BUSQUEDA (C# Windows Forms)
+
+ARCHIVOS
+  Nodo.cs            clase Nodo (dato, izq, der)
+  ArbolABB.cs        clase ArbolABB: Insertar, Buscar, Eliminar, Preorden, Inorden, Postorden, Altura, etc.
+  FormPrincipal.cs   formulario: cajas de texto, botones y dibujo del arbol
+  Pruebas.cs         pruebas de integridad (boton "Ejecutar pruebas")
+  Program.cs         punto de entrada
+  ABB_Formulario.csproj  proyecto (.NET 8, Windows Forms)
+
+COMO EJECUTARLO
+  Opcion A (Visual Studio 2022): abrir ABB_Formulario.csproj y pulsar F5.
+  Opcion B (terminal, requiere .NET 8 SDK en Windows):  dotnet run
+  Opcion C (proyecto propio): crear un proyecto "Aplicacion de Windows Forms" y agregar
+          Nodo.cs, ArbolABB.cs, FormPrincipal.cs, Pruebas.cs; en Program.cs usar
+          Application.Run(new FormPrincipal());  (namespace TareaABB)
+
+USO
+  - Escribe uno o varios enteros separados por coma y pulsa Insertar (o Enter).
+  - Buscar ilumina el camino desde la raiz; el nodo hallado se pinta de verde.
+  - Preorden / Inorden / Postorden muestran la lista e iluminan los nodos en ese orden.
+  - "Cargar ejemplo" arma el arbol 50, 30, 70, 20, 40, 60, 80.
+  - "Ejecutar pruebas" muestra el reporte; "Guardar reporte" lo guarda en .txt.
